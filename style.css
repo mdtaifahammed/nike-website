@@ -1,0 +1,219 @@
+body {
+    background-color: #ffffff;
+    
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 3rem;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 20px, 10px, 5px, black;
+}
+.logo {
+    height: 40px;
+    width: 70px;
+    background-image: url("https://cdn.freebiesupply.com/logos/large/2x/nike-4-logo-black-and-white.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    left: 0.5rem;
+    margin-left: 1rem;
+}
+.options {
+    font-weight: bolder;
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    left: 5rem;
+}
+
+.dropdown_men {
+    opacity: 0;
+    visibility: hidden;
+    width: 83.3rem;
+    /* height: 30rem; */
+    background-color: #cac7cc;
+    position: absolute;
+    background: linear-gradient(180deg, #cac7cc, white);
+    left: -10.3rem;
+    top: 2.5rem;
+    z-index: 20;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    transform: translateY(10px);
+}
+.men:hover .dropdown_men {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+body:has(.options:hover) .products_dialogues {
+    filter: blur(15px);
+}
+.men_options {
+    color: black;
+    margin-top: 1rem;
+}
+ul {
+    list-style-type: none;
+    position: relative;
+    left: -2.5rem;
+    margin-bottom: 3rem;
+}
+li {
+    margin-top: 1rem;
+    color: rgb(63, 63, 63);
+    transition: 10ms linear;
+}
+li:hover {
+    color: rgb(116, 112, 112);
+}
+.other_options {
+    width: 37rem;
+    color: black;
+    position: relative;
+    right: -10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.search {
+    display: flex;
+    color: white;
+}
+.search_icon {
+    background-color: #000000;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+.search_bar {
+    width: 20rem;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    padding: 0.5rem;
+}
+input:focus {
+    outline: none;
+}
+.products_dialogues {
+    display: flex;
+    margin-top: 2rem;
+}
+.main_body {
+    /* width: 30%; */
+    color: rgb(146, 145, 145);
+    position: relative;
+    top: 10rem;
+    left: 5rem;
+}
+.para {
+    color: rgba(116, 115, 115, 0.884);
+    width: 37rem;
+}
+.main_body .dialogues h1 {
+    color: black;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.shop {
+    margin-top: 3rem;
+}
+.shop button {
+    background-color: black;
+    color: whitesmoke;
+    height: 2rem;
+    width: max-content;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    transition: 100ms ease-out;
+}
+.shop button:hover {
+    scale: 1.2;
+}
+
+.carousel {
+    margin: 100px auto;
+    height: 27rem;
+    aspect-ratio: 1/1;
+    /* border: 2px solid red; */
+    display: flex;
+    overflow-x: auto;
+    border-radius: 50%;
+    position: relative;
+    right: -5rem;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    animation: spin 6s infinite linear;
+    padding-right: 1rem;
+    border-radius: 50%;
+}
+.card {
+    flex: 0 0 7em;
+    height: 25rem;
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    background-color: cornflowerblue;
+    font-size: 3rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-33%);
+    }
+    45% {
+        transform: translateX(-33%);
+    }
+    50% {
+        transform: translateX(-66.5%);
+    }
+    70% {
+        transform: translateX(-66.5%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+    95% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
