@@ -56,7 +56,7 @@ body {
     transform: translateY(0);
 }
 body:has(.options:hover) .products_dialogues {
-    filter: blur(15px);
+    filter: blur(8px);
 }
 .men_options {
     color: black;
